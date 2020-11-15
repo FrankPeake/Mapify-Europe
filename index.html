@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mapify</title>
+
+    <link href="./jqvmap-master/dist/jqvmap.css" media="screen" rel="stylesheet" type="text/css">
+
+    
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="./jqvmap-master/dist/jquery.vmap.js"></script>
+    <script type="text/javascript" src="./jqvmap-master/dist/maps/jquery.vmap.europe.js"></script>
+     
+    <script>
+    jQuery(document).ready(function() {
+        jQuery('#vmap').vectorMap({
+            map: 'europe_en',
+            backgroundColor: '#000000',
+            color: '#006400',
+            hoverColor: '#90EE90',
+            enableZoom: false,
+            showTooltip: false
+        });
+    });
+    </script>
+</head>
+<body>
+    <div id="vmap"></div>
+</body>
+</html>
